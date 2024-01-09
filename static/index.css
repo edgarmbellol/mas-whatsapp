@@ -1,0 +1,28 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.cont-general{
+    display: flexbox;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.cont-general img{
+    width: 70%;
+}
+.carga-form{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.carga-form input{
+    margin-top: 1vh;
+}
+.enviar{
+    width: 20%;
+    margin-left: 3vw;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\mensaje.css">
+    <title>Mensaje</title>
+</head>
+<body>
+    <div class="cont-general">
+        <h1>Edicion del mensaje</h1>
+        <h2>Escribe tu mensaje y selecciona los encabezados
+            para armar tu mensaje personalizado</h2>
+        <div class="cont-encabezados">
+            {% for encabezado in encabezados %}
+                <button id="{{encabezado}}" onclick="insertarTexto('{{encabezado}}')">{{ encabezado }}</button>
+            {% endfor %}
+        </div>
+        <form action="/enviar" class="cont-mensaje" method="post" enctype="multipart/form-data">
+            <p>Escribe tu mensaje aqui</p> 
+            <textarea type="text" name="mensaje" class="mensaje" id="mensaje" placeholder="Escribe tu mensaje aqui"></textarea>
+            <input type="submit" class="enviar" value="Enviar">
+        </form>
+    </div>
+    <script src="static\mensaje.js"></script>
+</body>
+</html>

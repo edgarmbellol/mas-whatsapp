@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\index.css">
+    <title>WhatsApp Masivos</title>
+</head>
+<body>
+    <div class="cont-general">
+        <h1>Envio de whatsapp masivos</h1>
+        <p>Sube tu archivo de excel, el único requerimiento
+            es que tenga una columna llamada “Numeros”.
+        </p>
+        <figure>
+            <img src="{{ url_for('static', filename='img/excel.png') }}" alt="Imagen ilustrativa">
+        </figure>
+        <p>No importa en que posición se encuentre la 
+            columna “Numeros”. Las demás columnas podrás
+            seleccionar si se muestran.
+        </p>
+        <form action="/mensaje" class="carga-form" method="post" enctype="multipart/form-data" id="cargaForm">
+            <input type="file" name="file" accept=".xlsx, .xls" id="archivoCarga" onchange="enableSubmit()">
+            <input type="submit" class="enviar" value="Subir Archivo" id="enviarBoton" disabled>
+        </form>
+    
+    </div>
+    <script src="static\index.js"></script>
+</body>
+</html>

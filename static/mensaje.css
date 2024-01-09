@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.cont-general{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.cont-encabezados{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cont-encabezados button{
+    margin: 3px;
+}
+.cont-mensaje{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 65vh;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cont-mensaje textarea{
+    width: 95%;
+    height: 80%;
+}
+.cont-mensaje input{
+    width: 50%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
