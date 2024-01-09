@@ -3,11 +3,19 @@ body{
     margin: 0;
 }
 .cont-general{
+    padding-top: 2vhgit ;
     display: flexbox;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+
+}
+.cont-general H1 {
+    margin: 0;
 }
 .cont-general img{
     width: 70%;
